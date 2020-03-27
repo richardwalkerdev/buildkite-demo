@@ -1,0 +1,4 @@
+steps:
+  - label: ":demo: Demo"
+    name: "demo"
+    command: echo "Buildkite demo"
