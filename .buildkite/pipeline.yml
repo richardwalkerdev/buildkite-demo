@@ -2,3 +2,7 @@ steps:
   - label: ":demo: Demo"
     name: "demo"
     command: echo "Buildkite demo"
+
+  - label: ":ansible: Demo"
+    name: "ansible-demo"
+    command: ansible localhost -m setup
