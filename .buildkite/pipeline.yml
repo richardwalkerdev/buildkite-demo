@@ -7,6 +7,6 @@ steps:
     name: "demo-make-docker-compose"
     command: make demo-make-docker-compose
 
-#  - label: ":ansible: Demo"
-#    name: "ansible-demo"
-#    command: ansible localhost -m setup
+  - label: ":demo: Demo using Ansible"
+    name: "demo-ansible"
+    command: ansible-playbook playbooks/local/demo_ansible.yml

@@ -1,0 +1,11 @@
+- name:  demo playbook
+  hosts: localhost
+  connection: local
+  become: yes
+
+  tasks:
+    - name: Add a line to a file
+      lineinfile:
+        path: /opt/demo/ansible-demp.txt
+        line: Demo using Ansible from Git
+        create: yes 
