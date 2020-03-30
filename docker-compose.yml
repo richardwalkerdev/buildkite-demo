@@ -1,0 +1,12 @@
+version: '3.4'
+services:
+  alpine-custom:
+    build: .
+    image: demo/alpine-custom
+    command: bash
+    env_file: .env
+    volumes:
+      - type: bind
+        source: .
+        target: /opt/demo
+    working_dir: /opt/demo

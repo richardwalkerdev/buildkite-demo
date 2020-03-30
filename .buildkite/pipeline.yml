@@ -3,6 +3,10 @@ steps:
     name: "demo"
     command: echo "Buildkite demo"
 
-  - label: ":ansible: Demo"
-    name: "ansible-demo"
-    command: ansible localhost -m setup
+  - label: ":demo: Demo using make and docker-compose"
+    name: "demo-make-docker-compose"
+    command: make demo-make-docker-compose
+
+#  - label: ":ansible: Demo"
+#    name: "ansible-demo"
+#    command: ansible localhost -m setup
