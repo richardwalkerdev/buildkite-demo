@@ -9,4 +9,7 @@ services:
       - type: bind
         source: /opt/demo
         target: /opt/demo
-    working_dir: /opt/demo
+      - type: bind
+        source: .
+        target: /opt/app
+    working_dir: /opt/app
