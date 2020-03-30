@@ -6,6 +6,12 @@
   tasks:
     - name: Add a line to a file
       lineinfile:
-        path: /opt/demo/ansible-demp.txt
+        path: /opt/demo/ansible-demo.txt
         line: Demo using Ansible from Git
         create: yes 
+
+    - name: Add another line to file using environment variable
+      lineinfile:
+        path: /opt/demo/ansible-demo.txt
+        line: "The value of foo = {{ lookup('env','foo') }}"
+
